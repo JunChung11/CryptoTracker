@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Crypto_Tracker
 //
-//  Created by Hyun Jeon on 3/20/24.
+//  Created by Junhyuk Hur on 3/20/24.
 //
 
 import SwiftUI

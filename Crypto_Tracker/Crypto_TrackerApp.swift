@@ -2,16 +2,19 @@
 //  Crypto_TrackerApp.swift
 //  Crypto_Tracker
 //
-//  Created by Hyun Jeon on 3/20/24.
+//  Created by Junhyuk Hur on 3/20/24.
 //
 
 import SwiftUI
 
 @main
 struct Crypto_TrackerApp: App {
+    
+    @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EmptyView().frame(width: 0, height: 0)
         }
     }
 }

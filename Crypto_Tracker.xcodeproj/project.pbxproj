@@ -11,6 +11,7 @@
 		A1CEDD952BABBA8E00FF5CAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CEDD942BABBA8E00FF5CAD /* ContentView.swift */; };
 		A1CEDD972BABBA9000FF5CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CEDD962BABBA9000FF5CAD /* Assets.xcassets */; };
 		A1CEDD9A2BABBA9000FF5CAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CEDD992BABBA9000FF5CAD /* Preview Assets.xcassets */; };
+		A1CEDDA32BABBBDF00FF5CAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CEDDA22BABBBDF00FF5CAD /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,8 @@
 		A1CEDD962BABBA9000FF5CAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1CEDD992BABBA9000FF5CAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1CEDD9B2BABBA9000FF5CAD /* Crypto_Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Crypto_Tracker.entitlements; sourceTree = "<group>"; };
+		A1CEDDA12BABBB1E00FF5CAD /* Crypto-Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Crypto-Tracker-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A1CEDDA22BABBBDF00FF5CAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +55,13 @@
 		A1CEDD912BABBA8E00FF5CAD /* Crypto_Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				A1CEDDA12BABBB1E00FF5CAD /* Crypto-Tracker-Info.plist */,
 				A1CEDD922BABBA8E00FF5CAD /* Crypto_TrackerApp.swift */,
 				A1CEDD942BABBA8E00FF5CAD /* ContentView.swift */,
 				A1CEDD962BABBA9000FF5CAD /* Assets.xcassets */,
 				A1CEDD9B2BABBA9000FF5CAD /* Crypto_Tracker.entitlements */,
 				A1CEDD982BABBA9000FF5CAD /* Preview Content */,
+				A1CEDDA22BABBBDF00FF5CAD /* AppDelegate.swift */,
 			);
 			path = Crypto_Tracker;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1CEDDA32BABBBDF00FF5CAD /* AppDelegate.swift in Sources */,
 				A1CEDD952BABBA8E00FF5CAD /* ContentView.swift in Sources */,
 				A1CEDD932BABBA8E00FF5CAD /* Crypto_TrackerApp.swift in Sources */,
 			);
@@ -274,6 +280,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Crypto-Tracker-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +308,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Crypto-Tracker-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
