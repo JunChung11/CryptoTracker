@@ -10,6 +10,9 @@ import SwiftUI
 
 class AppDelegate: NSObject, NSApplicationDelegate {
     
+    var menuBarCoinViewModel: MenuBarCoinViewModel!
+    var popoverCoinViewModel: PopoverCoinViewModel!
+    let coinCapService = CoinCapPriceService()
     var statusItem: NSStatusItem!
     let popover = NSPopover()
     
@@ -19,8 +22,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }()
     
     func applicationDidFinishLaunching(_ notification: Notification) {
+        setupCoinCapService()
         setupMenuBar()
         setupPopover()
+    }
+    
+    func setupCoinCapService() {
+        coinCapService.connect()
+        coinCapService.startMonitorNetworkConnectivity()
     }
 
 }
@@ -30,12 +39,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 extension AppDelegate {
     
     func setupMenuBar() {
+        menuBarCoinViewModel = MenuBarCoinViewModel(service: coinCapService)
         statusItem = NSStatusBar.system.statusItem(withLength: 64)
         guard let contentView = self.contentView,
               let menuButton = statusItem.button
         else { return }
         
-        let hostingView = NSHostingView(rootView: MenuBarCoinView())
+        let hostingView = NSHostingView(rootView: MenuBarCoinView(viewModel: menuBarCoinViewModel))
         hostingView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(hostingView)
         
@@ -73,12 +83,13 @@ extension AppDelegate {
 extension AppDelegate: NSPopoverDelegate {
     
     func setupPopover() {
+        popoverCoinViewModel = .init(service: coinCapService)
         popover.behavior = .transient
         popover.animates = true
         popover.contentSize = .init(width: 240, height: 280)
         popover.contentViewController = NSViewController()
         popover.contentViewController?.view = NSHostingView(
-            rootView: PopoverCoinView().frame(maxWidth: .infinity, maxHeight: .infinity).padding()
+            rootView: PopoverCoinView(viewModel: popoverCoinViewModel).frame(maxWidth: .infinity, maxHeight: .infinity).padding()
         )
         popover.delegate = self
     }

@@ -14,6 +14,11 @@
 		A1CEDDA32BABBBDF00FF5CAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CEDDA22BABBBDF00FF5CAD /* AppDelegate.swift */; };
 		A1CEDDA52BABC1E800FF5CAD /* MenuBarCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CEDDA42BABC1E800FF5CAD /* MenuBarCoinView.swift */; };
 		A1CEDDA72BABC74600FF5CAD /* PopoverCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CEDDA62BABC74600FF5CAD /* PopoverCoinView.swift */; };
+		A1CEDDA92BABD00E00FF5CAD /* CoinType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CEDDA82BABD00E00FF5CAD /* CoinType.swift */; };
+		A1CEDDAB2BABD19900FF5CAD /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CEDDAA2BABD19800FF5CAD /* Coin.swift */; };
+		A1CEDDAD2BABD22000FF5CAD /* CoinCapPriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CEDDAC2BABD22000FF5CAD /* CoinCapPriceService.swift */; };
+		A1CEDDAF2BAC734600FF5CAD /* MenuBarCoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CEDDAE2BAC734600FF5CAD /* MenuBarCoinViewModel.swift */; };
+		A1CEDDB12BAC83F300FF5CAD /* PopoverCoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CEDDB02BAC83F300FF5CAD /* PopoverCoinViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		A1CEDDA22BABBBDF00FF5CAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1CEDDA42BABC1E800FF5CAD /* MenuBarCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarCoinView.swift; sourceTree = "<group>"; };
 		A1CEDDA62BABC74600FF5CAD /* PopoverCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverCoinView.swift; sourceTree = "<group>"; };
+		A1CEDDA82BABD00E00FF5CAD /* CoinType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinType.swift; sourceTree = "<group>"; };
+		A1CEDDAA2BABD19800FF5CAD /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		A1CEDDAC2BABD22000FF5CAD /* CoinCapPriceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCapPriceService.swift; sourceTree = "<group>"; };
+		A1CEDDAE2BAC734600FF5CAD /* MenuBarCoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarCoinViewModel.swift; sourceTree = "<group>"; };
+		A1CEDDB02BAC83F300FF5CAD /* PopoverCoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverCoinViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,11 @@
 				A1CEDD9B2BABBA9000FF5CAD /* Crypto_Tracker.entitlements */,
 				A1CEDD982BABBA9000FF5CAD /* Preview Content */,
 				A1CEDDA22BABBBDF00FF5CAD /* AppDelegate.swift */,
+				A1CEDDA82BABD00E00FF5CAD /* CoinType.swift */,
+				A1CEDDAA2BABD19800FF5CAD /* Coin.swift */,
+				A1CEDDAC2BABD22000FF5CAD /* CoinCapPriceService.swift */,
+				A1CEDDAE2BAC734600FF5CAD /* MenuBarCoinViewModel.swift */,
+				A1CEDDB02BAC83F300FF5CAD /* PopoverCoinViewModel.swift */,
 				A1CEDDA62BABC74600FF5CAD /* PopoverCoinView.swift */,
 				A1CEDDA42BABC1E800FF5CAD /* MenuBarCoinView.swift */,
 			);
@@ -150,11 +165,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1CEDDAF2BAC734600FF5CAD /* MenuBarCoinViewModel.swift in Sources */,
 				A1CEDDA72BABC74600FF5CAD /* PopoverCoinView.swift in Sources */,
 				A1CEDDA32BABBBDF00FF5CAD /* AppDelegate.swift in Sources */,
+				A1CEDDA92BABD00E00FF5CAD /* CoinType.swift in Sources */,
 				A1CEDD952BABBA8E00FF5CAD /* ContentView.swift in Sources */,
 				A1CEDDA52BABC1E800FF5CAD /* MenuBarCoinView.swift in Sources */,
+				A1CEDDAD2BABD22000FF5CAD /* CoinCapPriceService.swift in Sources */,
 				A1CEDD932BABBA8E00FF5CAD /* Crypto_TrackerApp.swift in Sources */,
+				A1CEDDAB2BABD19900FF5CAD /* Coin.swift in Sources */,
+				A1CEDDB12BAC83F300FF5CAD /* PopoverCoinViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
