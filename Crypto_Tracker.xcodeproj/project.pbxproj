@@ -12,6 +12,8 @@
 		A1CEDD972BABBA9000FF5CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CEDD962BABBA9000FF5CAD /* Assets.xcassets */; };
 		A1CEDD9A2BABBA9000FF5CAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CEDD992BABBA9000FF5CAD /* Preview Assets.xcassets */; };
 		A1CEDDA32BABBBDF00FF5CAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CEDDA22BABBBDF00FF5CAD /* AppDelegate.swift */; };
+		A1CEDDA52BABC1E800FF5CAD /* MenuBarCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CEDDA42BABC1E800FF5CAD /* MenuBarCoinView.swift */; };
+		A1CEDDA72BABC74600FF5CAD /* PopoverCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CEDDA62BABC74600FF5CAD /* PopoverCoinView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		A1CEDD9B2BABBA9000FF5CAD /* Crypto_Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Crypto_Tracker.entitlements; sourceTree = "<group>"; };
 		A1CEDDA12BABBB1E00FF5CAD /* Crypto-Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Crypto-Tracker-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A1CEDDA22BABBBDF00FF5CAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1CEDDA42BABC1E800FF5CAD /* MenuBarCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarCoinView.swift; sourceTree = "<group>"; };
+		A1CEDDA62BABC74600FF5CAD /* PopoverCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverCoinView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				A1CEDD9B2BABBA9000FF5CAD /* Crypto_Tracker.entitlements */,
 				A1CEDD982BABBA9000FF5CAD /* Preview Content */,
 				A1CEDDA22BABBBDF00FF5CAD /* AppDelegate.swift */,
+				A1CEDDA62BABC74600FF5CAD /* PopoverCoinView.swift */,
+				A1CEDDA42BABC1E800FF5CAD /* MenuBarCoinView.swift */,
 			);
 			path = Crypto_Tracker;
 			sourceTree = "<group>";
@@ -144,8 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1CEDDA72BABC74600FF5CAD /* PopoverCoinView.swift in Sources */,
 				A1CEDDA32BABBBDF00FF5CAD /* AppDelegate.swift in Sources */,
 				A1CEDD952BABBA8E00FF5CAD /* ContentView.swift in Sources */,
+				A1CEDDA52BABC1E800FF5CAD /* MenuBarCoinView.swift in Sources */,
 				A1CEDD932BABBA8E00FF5CAD /* Crypto_TrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
